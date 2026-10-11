@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'on-secondary': '#4c2700', 'error': '#ffb4ab', 'on-primary': '#00382c', 'surface-container': '#1a202b', 'on-tertiary-fixed-variant': '#005047', 'on-error-container': '#ffdad6', 'tertiary': '#66ffe9', 'surface-container-lowest': '#080e19', 'secondary-fixed-dim': '#ffb878', 'surface-container-high': '#242a36', 'on-background': '#dde2f3', 'primary-fixed': '#42fdd3', 'surface-variant': '#2f3541', 'on-secondary-fixed-variant': '#6c3a00', 'on-primary-fixed-variant': '#005141', 'outline-variant': '#3b4a44', 'secondary-fixed': '#ffdcc1', 'surface-tint': '#00e0b8', 'inverse-surface': '#dde2f3', 'on-primary-fixed': '#002019', 'primary': '#6fffd9', 'surface-container-highest': '#2f3541', 'on-tertiary-fixed': '#00201c', 'inverse-primary': '#006b57', 'on-error': '#690005', 'surface-dim': '#0d131f', 'on-surface-variant': '#b9cac3', 'inverse-on-surface': '#2a303d', 'background': '#0d131f', 'on-secondary-fixed': '#2e1500', 'tertiary-container': '#00e4cd', 'tertiary-fixed-dim': '#00dec8', 'surface-container-low': '#161c27', 'tertiary-fixed': '#34fde4', 'surface': '#0d131f', 'error-container': '#93000a', 'on-tertiary-container': '#006156', 'outline': '#84948e', 'on-secondary-container': '#422200', 'secondary': '#ffb878', 'on-tertiary': '#003731', 'on-surface': '#dde2f3', 'on-primary-container': '#00614f', 'surface-bright': '#333946', 'primary-container': '#00e5bc', 'primary-fixed-dim': '#00e0b8', 'secondary-container': '#d37b16' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-sm': '0.5rem', 'margin-mobile': '1rem', 'gutter-mobile': '0.75rem', 'space-lg': '1.5rem', 'gutter': '1rem', 'margin': '1.5rem', 'space-md': '1rem', 'space-xl': '2.25rem', 'space-xs': '0.25rem' }, fontFamily: { 'display-lg-mobile': ['Inter'], 'headline-lg': ['Inter'], 'body-lg': ['Inter'], 'display-lg': ['Inter'], 'label-caps': ['JetBrains Mono'], 'headline-md': ['Inter'], 'telemetry-lg': ['JetBrains Mono'], 'body-md': ['Inter'], 'telemetry-sm': ['JetBrains Mono'], 'body-sm': ['Inter'], 'telemetry-md': ['JetBrains Mono'], 'headline-sm': ['Inter'] }, fontSize: { 'display-lg-mobile': ['30px', { lineHeight: '36px', letterSpacing: '-0.01em', fontWeight: '700' }], 'headline-lg': ['28px', { lineHeight: '34px', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'display-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.02em', fontWeight: '700' }], 'label-caps': ['10px', { lineHeight: '12px', letterSpacing: '0.08em', fontWeight: '700' }], 'headline-md': ['22px', { lineHeight: '28px', fontWeight: '600' }], 'telemetry-lg': ['24px', { lineHeight: '28px', letterSpacing: '-0.02em', fontWeight: '600' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'telemetry-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.04em', fontWeight: '500' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'telemetry-md': ['14px', { lineHeight: '18px', letterSpacing: '0.02em', fontWeight: '500' }], 'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '600' }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(4,7,14,0.6)]"><div class="h-24 px-margin-mobile flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Calamars Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XXNbCHfg90piLtGKhA8Dmbs5UlgHezZPjCKXRnmimFlON8nvi0q7JwzBx6EXVawruyJHhgiOVRpTXKtV6mFGC9E9gvr94lwxhsVMLHL26pVkP-LLmcgDhkv-prHMkZslikegS6s9qtupPl6wgDvtPVfP0KLYCvYODLeJpYE9IW8XryGOYfMmd_ehgtdlrIzbB7xvkLGVCkQIdNYJyvKwopgVz26IbLjckv0OCImwxgr5QoTTbDqqz13A"/><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-wider uppercase text-primary drop-shadow-[0_0_10px_rgba(0,229,188,0.45)]">CALAMARS</span><span class="px-1.5 py-0.5 rounded-full bg-primary-container/20 text-primary-fixed font-label-caps text-label-caps tracking-widest">TEMP. 26/27</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Configuración táctica" class="w-11 h-11 flex items-center justify-center rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">tune</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center justify-between text-on-surface-variant"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high/90 text-on-surface"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse shadow-[0_0_8px_#00e5bc]"></span><span class="font-telemetry-sm text-telemetry-sm uppercase tracking-wider text-on-surface">Mallorca Costa</span></div><div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-container-high/90"><span class="font-telemetry-sm text-telemetry-sm text-secondary-fixed-dim">🌖 84% Creciente</span><span class="text-outline-variant font-telemetry-sm text-telemetry-sm">|</span><span class="font-telemetry-sm text-telemetry-sm text-tertiary">Marea +0.28m</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full px-margin-mobile pt-24 pb-28 bg-surface"><div class="flex flex-col w-full gap-space-md relative">
+<!-- Telemetría Marina Nocturna (HUD Superior Flotante) -->
+<section aria-label="Condiciones marinas y lunares" class="grid grid-cols-1 gap-space-xs">
+<!-- Fila Lunar & Solunar -->
+<div class="bg-surface-container-low p-space-sm rounded-xl shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[24px]">bedtime</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Gibosa Creciente</span>
+<span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded-full bg-secondary-container/30 text-secondary-fixed">82%</span>
+</div>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface-variant truncate">Salida: 19:42 · Puesta: 06:15</span>
+</div>
+</div>
+<div class="text-right shrink-0 pl-2">
+<span class="font-label-caps text-label-caps text-tertiary block">COEF. MAREA</span>
+<span class="font-telemetry-md text-telemetry-md text-primary font-semibold">76 · Favorable</span>
+</div>
+</div>
+<!-- Fila Estado de la Mar & Eging Index -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">OLEAJE Y VIENTO</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">waves</span>
+</div>
+<div class="mt-1">
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">0.3 - 0.5m</p>
+<p class="font-telemetry-sm text-telemetry-sm text-primary flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[13px] rotate-45">navigation</span>
+            NE 7 kts · Rizada
+          </p>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">AGUA &amp; VISIBILIDAD</span>
+<span class="material-symbols-outlined text-primary text-[16px]">visibility</span>
+</div>
+<div class="mt-1">
+<p class="font-headline-sm text-headline-sm text-on-surface">16.8°C</p>
+<p class="font-telemetry-sm text-telemetry-sm text-tertiary truncate mt-0.5">
+            Claridad Alta (Óptima)
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Filtros Tácticos Rápidos de Costa -->
+<div class="flex items-center gap-1.5 overflow-x-auto py-1 no-scrollbar" role="tablist">
+<button class="filter-chip px-3 py-1.5 rounded-full bg-primary-container text-on-primary font-telemetry-sm text-telemetry-sm font-semibold shrink-0 shadow-sm flex items-center gap-1" data-filter="all">
+<span class="material-symbols-outlined text-[15px]">radar</span>
+      Todos los Spots
+    </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-telemetry-sm text-telemetry-sm shrink-0 flex items-center gap-1 hover:text-primary transition-colors" data-filter="hotspot">
+<span class="material-symbols-outlined text-[15px] text-secondary">local_fire_department</span>
+      Hotspots Calamar
+    </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-telemetry-sm text-telemetry-sm shrink-0 flex items-center gap-1 hover:text-primary transition-colors" data-filter="sepia">
+<span class="material-symbols-outlined text-[15px] text-tertiary">bubble_chart</span>
+      Zonas Sepia
+    </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-telemetry-sm text-telemetry-sm shrink-0 flex items-center gap-1 hover:text-primary transition-colors" data-filter="shelter">
+<span class="material-symbols-outlined text-[15px]">shield</span>
+      Resguardo Viento NE
+    </button>
+</div>
+<!-- Contenedor del Mapa Táctico Náutico de Mallorca -->
+<div class="relative w-full h-[330px] rounded-xl overflow-hidden bg-surface-container-lowest shadow-xl flex items-center justify-center">
+<!-- Cuadrícula Náutica / Líneas de Coordenadas -->
+<svg class="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="marine-grid" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00e5bc" stroke-dasharray="2,4" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#marine-grid)" height="100%" width="100%"></rect>
+<!-- Círculo de Alcance Radar -->
+<circle class="animate-pulse" cx="50%" cy="50%" fill="none" r="140" stroke="#00e5bc" stroke-dasharray="4,8" stroke-width="0.75"></circle>
+<circle cx="50%" cy="50%" fill="none" r="85" stroke="#00e5bc" stroke-dasharray="2,6" stroke-width="0.5"></circle>
+</svg>
+<!-- Silueta Cartográfica Náutica de Mallorca y Batimetría -->
+<svg class="w-full h-full relative z-10 select-none" viewbox="0 0 420 320">
+<defs>
+<!-- Filtro Glow Bioluminiscente -->
+<filter height="140%" id="eging-glow" width="140%" x="-20%" y="-20%">
+<fegaussianblur result="blur" stddeviation="3"></fegaussianblur>
+<fecomposite in="SourceGraphic" in2="blur" operator="over"></fecomposite>
+</filter>
+<radialgradient cx="50%" cy="50%" id="depth-grad" r="50%">
+<stop offset="0%" stop-color="#0e1b36"></stop>
+<stop offset="100%" stop-color="#080e19"></stop>
+</radialgradient>
+</defs>
+<!-- Isóbatas Batimétricas (-50m, -20m, -10m) -->
+<path d="M 60,160 C 95,95 190,65 305,75 C 365,80 395,120 375,190 C 355,255 250,290 150,265 C 80,240 45,205 60,160 Z" fill="none" opacity="0.25" stroke="#00e5bc" stroke-dasharray="3,3" stroke-width="0.8"></path>
+<path d="M 75,160 C 105,110 185,85 285,95 C 345,100 370,135 350,185 C 330,235 240,265 160,245 C 100,225 65,195 75,160 Z" fill="none" opacity="0.4" stroke="#00e5bc" stroke-dasharray="4,2" stroke-width="1"></path>
+<!-- Sondas de Profundidad Náuticas -->
+<text fill="#00e5bc" font-family="JetBrains Mono" font-size="8" opacity="0.4" x="70" y="110">32m</text>
+<text fill="#00e5bc" font-family="JetBrains Mono" font-size="8" opacity="0.4" x="345" y="105">64m</text>
+<text fill="#00e5bc" font-family="JetBrains Mono" font-size="8" opacity="0.4" x="355" y="240">48m</text>
+<text fill="#00e5bc" font-family="JetBrains Mono" font-size="8" opacity="0.4" x="145" y="280">22m</text>
+<text fill="#00e5bc" font-family="JetBrains Mono" font-size="7" opacity="0.3" x="110" y="225">Bahía Palma 18m</text>
+<!-- Silueta Terrestre Isla de Mallorca -->
+<path d="M 95,170 
+               C 85,150 110,120 135,105 
+               C 155,95 210,85 240,90 
+               C 260,95 270,75 285,60 
+               C 292,52 305,58 300,72 
+               C 295,85 320,105 345,115 
+               C 365,125 360,150 350,175 
+               C 340,195 350,220 330,240 
+               C 310,258 260,250 230,255 
+               C 200,260 170,260 145,230 
+               C 125,205 105,185 95,170 Z" fill="#121b2f" filter="drop-shadow(0 0 6px rgba(0, 229, 188, 0.2))" id="mallorca-coast" stroke="#00e5bc" stroke-width="1.6"></path>
+<!-- Relieve Serra de Tramuntana & Es Pla (Sutil topografía nocturna) -->
+<path d="M 125,120 Q 185,95 265,85" fill="none" stroke="#243452" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M 140,135 Q 200,110 275,98" fill="none" stroke="#1d2b45" stroke-width="1.8"></path>
+<!-- Balizas y Puntos Costeros Interactivos -->
+<!-- SPOT 5: Far de Formentor (Punta extrema norte) -->
+<g class="spot-marker cursor-pointer group" data-spot="formentor" transform="translate(295, 62)">
+<circle class="animate-ping" fill="#00e5bc" opacity="0.15" r="12"></circle>
+<circle fill="#00e5bc" r="5"></circle>
+<circle fill="#070d18" r="2"></circle>
+</g>
+<!-- SPOT 2: Port d'Andratx (Oeste / Espigón norte) -->
+<g class="spot-marker cursor-pointer group" data-spot="andratx" transform="translate(90, 168)">
+<circle fill="#66ffe9" opacity="0.2" r="10"></circle>
+<circle fill="#66ffe9" r="4.5"></circle>
+<circle fill="#070d18" r="1.8"></circle>
+</g>
+<!-- SPOT 3: Cala Rajada / Cap Vermell (Este - Hotspot destacado) -->
+<g class="spot-marker cursor-pointer group" data-spot="calarjada" transform="translate(352, 132)">
+<circle class="animate-pulse" fill="#ffb878" opacity="0.25" r="14"></circle>
+<circle fill="#ffb878" r="6"></circle>
+<circle fill="#4c2700" r="2.5"></circle>
+<!-- Píldora Hotspot en mapa -->
+<rect fill="#242a36" height="15" rx="3" width="38" x="8" y="-9"></rect>
+<text fill="#ffb878" font-family="JetBrains Mono" font-size="8" font-weight="700" x="12" y="2">HOT!</text>
+</g>
+<!-- SPOT 4: Porto Colom (Sureste) -->
+<g class="spot-marker cursor-pointer group" data-spot="portocolom" transform="translate(330, 225)">
+<circle fill="#00e5bc" opacity="0.2" r="9"></circle>
+<circle fill="#00e5bc" r="4"></circle>
+<circle fill="#070d18" r="1.6"></circle>
+</g>
+<!-- SPOT 1: Cap Blanc (Sur - SELECCIONADO POR DEFECTO) -->
+<g class="spot-marker cursor-pointer group" data-spot="capblanc" transform="translate(165, 248)">
+<circle class="animate-ping" fill="#00e5bc" opacity="0.3" r="16"></circle>
+<circle fill="#00e5bc" filter="url(#eging-glow)" r="8"></circle>
+<circle fill="#00382c" r="3.5"></circle>
+<!-- Pulso de radar del spot activo -->
+<circle fill="none" opacity="0.7" r="22" stroke="#00e5bc" stroke-dasharray="2,3" stroke-width="1"></circle>
+</g>
+</svg>
+<!-- Controles Flotantes Sobre el Mapa (Brújula Náutica & GPS) -->
+<div class="absolute top-3 right-3 flex flex-col gap-2 z-20">
+<!-- Brújula Náutica -->
+<div class="w-10 h-10 rounded-full bg-surface-container-high/90 backdrop-blur-md shadow-md flex items-center justify-center text-primary" title="Orientación Norte">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+</div>
+<!-- GPS Mi Posición -->
+<button aria-label="Centrar en mi ubicación actual" class="w-10 h-10 rounded-full bg-surface-container-high/90 backdrop-blur-md text-on-surface hover:text-primary transition-colors flex items-center justify-center shadow-md active:scale-95" id="btn-gps">
+<span class="material-symbols-outlined text-[20px]">my_location</span>
+</button>
+<!-- Capa Batimetría Toggle -->
+<button aria-label="Cambiar escala batimétrica" class="w-10 h-10 rounded-full bg-surface-container-high/90 backdrop-blur-md text-tertiary flex items-center justify-center shadow-md active:scale-95" id="btn-bathymetry">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</button>
+</div>
+<!-- Indicador de Coordenadas de Costa en Tiempo Real -->
+<div class="absolute bottom-2 left-3 z-20 bg-surface-container-lowest/80 backdrop-blur-sm px-2 py-0.5 rounded text-on-surface-variant font-telemetry-sm text-telemetry-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+      39°21'48"N 2°47'12"E · WGS84
+    </div>
+</div>
+<!-- Micro Lista Deslizable de Spots en Radar -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">SPOTS MONITOREADOS EN COSTA</span>
+<span class="font-telemetry-sm text-telemetry-sm text-primary">5 activos</span>
+</div>
+<div class="grid grid-cols-1 gap-1.5">
+<!-- Card Spot 1 (Activo) -->
+<div class="spot-card p-space-sm rounded-xl bg-surface-container-high cursor-pointer transition-all shadow-sm flex items-center justify-between" data-target="capblanc">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">waves</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Cap Blanc (Acantilados)</span>
+<span class="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+</div>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface-variant truncate">Última salida: Ayer · Acantilado 15-22m</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 pl-2">
+<div class="text-right">
+<span class="font-telemetry-md text-telemetry-md text-primary font-bold">8C · 2S</span>
+<span class="font-label-caps text-label-caps block text-outline-variant">CAPTURAS</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">chevron_right</span>
+</div>
+</div>
+<!-- Card Spot 3 (Hotspot Cala Rajada) -->
+<div class="spot-card p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer shadow-sm flex items-center justify-between" data-target="calarjada">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Cala Rajada / Cap Vermell</span>
+<span class="font-label-caps text-label-caps px-1 py-0.2 rounded bg-secondary text-on-secondary font-bold">HOT</span>
+</div>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface-variant truncate">Sombra de corriente óptima</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 pl-2">
+<div class="text-right">
+<span class="font-telemetry-md text-telemetry-md text-secondary-fixed-dim font-bold">11C · 4S</span>
+<span class="font-label-caps text-label-caps block text-outline-variant">RÉCORD 48H</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Panel Flotante Deslizable (Bottom Sheet Náutico Táctico) -->
+<section class="bg-surface-container p-space-md rounded-xl shadow-xl flex flex-col gap-space-sm" id="spot-detail-sheet">
+<!-- Manija táctil sutil -->
+<div class="w-10 h-1 bg-outline-variant/40 rounded-full mx-auto mb-1"></div>
+<!-- Encabezado del Spot Seleccionado -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-primary px-2 py-0.5 rounded-full bg-primary-container/20 tracking-wider">SPOT SELECCIONADO</span>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface-variant">Llucmajor / Ses Salines</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1 truncate" id="sheet-title">
+          Cap Blanc - Ses Salines
+        </h2>
+</div>
+<button class="w-9 h-9 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-primary flex items-center justify-center shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+</div>
+<!-- Fila de Rendimiento y Recomendación Técnica de Señuelo -->
+<div class="grid grid-cols-3 gap-space-xs pt-1">
+<div class="bg-surface-container-low p-2 rounded-lg flex flex-col">
+<span class="font-label-caps text-label-caps text-outline-variant">PROFUNDIDAD</span>
+<span class="font-telemetry-md text-telemetry-md text-on-surface mt-0.5">18 - 24 m</span>
+<span class="font-telemetry-sm text-telemetry-sm text-tertiary">Fondo Mixto</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg flex flex-col">
+<span class="font-label-caps text-label-caps text-outline-variant">CORRIENTE</span>
+<span class="font-telemetry-md text-telemetry-md text-on-surface mt-0.5">0.4 nudos</span>
+<span class="font-telemetry-sm text-telemetry-sm text-primary">Deriva S</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg flex flex-col">
+<span class="font-label-caps text-label-caps text-outline-variant">TOP EGI SUGERIDO</span>
+<span class="font-telemetry-md text-telemetry-md text-secondary-fixed-dim mt-0.5 truncate">Yamashita 3.0</span>
+<span class="font-telemetry-sm text-telemetry-sm text-on-surface-variant">Glow / Keimura</span>
+</div>
+</div>
+<!-- Botón Principal de Acción Táctica -->
+<div class="pt-2 flex items-center gap-space-xs">
+<button class="flex-1 py-3.5 px-4 rounded-xl bg-gradient-to-r from-primary-container to-tertiary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-lg hover:opacity-95 active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined text-[22px]">add_circle</span>
+<span>+ Iniciar Jornada Aquí</span>
+</button>
+<button aria-label="Ruta náutica a pie o embarcación" class="w-12 h-12 rounded-xl bg-surface-container-high text-on-surface hover:text-primary flex items-center justify-center shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[22px]">directions</span>
+</button>
+</div>
+</section>
+</div>
+<script>
+  (function() {
+    const spotsData = {
+      capblanc: {
+        title: "Cap Blanc - Ses Salines",
+        zone: "Llucmajor / Ses Salines",
+        depth: "18 - 24 m",
+        bottom: "Fondo Mixto",
+        current: "0.4 nudos",
+        drift: "Deriva S",
+        egi: "Yamashita 3.0",
+        egiType: "Glow / Keimura"
+      },
+      andratx: {
+        title: "Port d'Andratx (Espigón norte)",
+        zone: "Andratx Costa Ponent",
+        depth: "8 - 14 m",
+        bottom: "Rocas / Bloques",
+        current: "0.2 nudos",
+        drift: "Calma interior",
+        egi: "DULS Egi 2.5",
+        egiType: "Cloth Rojo Naranja"
+      },
+      calarjada: {
+        title: "Cala Rajada / Cap Vermell",
+        zone: "Capdepera Llevant",
+        depth: "20 - 32 m",
+        bottom: "Cascajo & Posidonia",
+        current: "0.7 nudos",
+        drift: "Vaciante NE",
+        egi: "Yamashita 3.5",
+        egiType: "UV Deep 490 Glow"
+      },
+      portocolom: {
+        title: "Porto Colom (Faro & Bocana)",
+        zone: "Felanitx Sud-est",
+        depth: "12 - 16 m",
+        bottom: "Arena y Roca",
+        current: "0.3 nudos",
+        drift: "Rumbo SSE",
+        egi: "Yo-Zuri 3.0",
+        egiType: "Aurie-Q Gold Pink"
+      },
+      formentor: {
+        title: "Far de Formentor (Punta)",
+        zone: "Pollença Tramuntana",
+        depth: "30 - 45 m",
+        bottom: "Acantilado vertical",
+        current: "1.1 nudos",
+        drift: "Corriente fuerte",
+        egi: "Deep Yamashita 3.5",
+        egiType: "Super Glow 30g"
+      }
+    };
+
+    const sheetTitle = document.getElementById('sheet-title');
+    const spotMarkers = document.querySelectorAll('.spot-marker');
+    const spotCards = document.querySelectorAll('.spot-card');
+
+    function updateSelectedSpot(spotKey) {
+      const data = spotsData[spotKey];
+      if (!data) return;
+
+      if (sheetTitle) {
+        sheetTitle.textContent = data.title;
+      }
+
+      // Feedback háptico visual en marcadores SVG
+      spotMarkers.forEach(m => {
+        if (m.getAttribute('data-spot') === spotKey) {
+          m.querySelector('circle:nth-child(2)').setAttribute('fill', '#00e5bc');
+        }
+      });
+    }
+
+    spotMarkers.forEach(marker => {
+      marker.addEventListener('click', () => {
+        const key = marker.getAttribute('data-spot');
+        updateSelectedSpot(key);
+      });
+    });
+
+    spotCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const key = card.getAttribute('data-target');
+        updateSelectedSpot(key);
+      });
+    });
+
+    // Chips de filtrado
+    const filterChips = document.querySelectorAll('.filter-chip');
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => {
+          c.classList.remove('bg-primary-container', 'text-on-primary', 'font-semibold');
+          c.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        });
+        chip.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        chip.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold');
+      });
+    });
+
+    // Botón GPS
+    const btnGps = document.getElementById('btn-gps');
+    if (btnGps) {
+      btnGps.addEventListener('click', () => {
+        btnGps.classList.add('text-primary');
+        setTimeout(() => {
+          btnGps.classList.remove('text-primary');
+        }, 1500);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(4,7,14,0.7)]" data-active-classes="text-primary [&amp;&gt;div.nav-indicator]:opacity-100 [&amp;&gt;span.nav-glow]:drop-shadow-[0_0_12px_rgba(0,229,188,0.7)]"><div class="flex items-center justify-around h-20 px-gutter-mobile"><a aria-current="page" class="relative flex flex-col items-center justify-center w-16 h-14 transition-colors group text-primary [&amp;&gt;div.nav-indicator]:opacity-100 [&amp;&gt;span.nav-glow]:drop-shadow-[0_0_12px_rgba(0,229,188,0.7)]" data-path="mapa" href="#"><div class="nav-indicator absolute -top-1 w-8 h-1 rounded-full bg-primary-container opacity-0 transition-opacity"></div><span class="nav-glow material-symbols-outlined text-[24px]">explore</span><span class="font-label-caps text-label-caps uppercase mt-1 tracking-wider">Mapa</span></a><a class="relative flex flex-col items-center justify-center w-16 h-14 text-on-surface-variant transition-colors group" data-path="registro" href="#"><div class="nav-indicator absolute -top-1 w-8 h-1 rounded-full bg-primary-container opacity-0 transition-opacity"></div><div class="w-10 h-10 -mt-3 rounded-full bg-surface-container-high border-2 border-primary-container/40 flex items-center justify-center shadow-[0_0_16px_rgba(0,229,188,0.3)]"><span class="nav-glow material-symbols-outlined text-primary text-[22px]">add</span></div><span class="font-label-caps text-label-caps uppercase mt-1 tracking-wider">Registrar</span></a><a class="relative flex flex-col items-center justify-center w-16 h-14 text-on-surface-variant transition-colors group" data-path="estadisticas" href="#"><div class="nav-indicator absolute -top-1 w-8 h-1 rounded-full bg-primary-container opacity-0 transition-opacity"></div><span class="nav-glow material-symbols-outlined text-[24px]">radar</span><span class="font-label-caps text-label-caps uppercase mt-1 tracking-wider">Estadíst.</span></a><a class="relative flex flex-col items-center justify-center w-16 h-14 text-on-surface-variant transition-colors group" data-path="diario" href="#"><div class="nav-indicator absolute -top-1 w-8 h-1 rounded-full bg-primary-container opacity-0 transition-opacity"></div><span class="nav-glow material-symbols-outlined text-[24px]">auto_stories</span><span class="font-label-caps text-label-caps uppercase mt-1 tracking-wider">Diario</span></a></div></nav></body></html>
